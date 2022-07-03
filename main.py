@@ -1,3 +1,4 @@
+'''Module Imports'''
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -19,7 +20,8 @@ for i in range(partition): #Column for loop
 '''Plotting'''
 plt.figure() #Create figure
 plt.contourf(x, y, amp, levels=300) #Create contour map
-plt.ylabel('y') #y axis label
-plt.xlabel('x') #x axis label
+plt.title('Heat Map of z = Sin(y)*Cos(x)') #Plot title
+plt.ylabel('Sin(y)') #y axis label
+plt.xlabel('Cos(x)') #x axis label
 plt.colorbar() #Color bar
 plt.show() #Show plot
